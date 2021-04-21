@@ -10,3 +10,5 @@ A place to record the problems I have solved on Leetcode
 |   4   |           [Longest Substring](src/longest-sub-rep-char)            | Medium     |
 |   5   |             [Palindrome Number](src/palindrome-number)             | Easy       |
 |   6   | [Longest Palindromic Substring](src/longest-palindromic-substring) | Easy       |
+|   7   |            [ZigZag Conversion](src/zig-zag-conversion)             | Medium     |
+|   8   |              [Roman to Integer](src/roman-to-integer)              | Easy       |
