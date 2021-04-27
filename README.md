@@ -12,4 +12,5 @@ A place to record the problems I have solved on Leetcode
 |   6   | [Longest Palindromic Substring](src/longest-palindromic-substring) | Easy       |
 |   7   |            [ZigZag Conversion](src/zig-zag-conversion)             | Medium     |
 |   8   |              [Roman to Integer](src/roman-to-integer)              | Easy       |
-|   9   |             [Integer to Roman](src/interger-to-roman)              | Medium     |
+|   9   |              [Integer to Roman](src/integer-to-roman)              | Medium     |
+|  10   |         [String to Integer (atio)](src/string-to-integer)          | Medium     |
