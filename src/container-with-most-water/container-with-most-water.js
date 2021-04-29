@@ -2,20 +2,34 @@
  * @param {number[]} height
  * @return {number}
  */
+
+/*
+  The Water container is decided by the width and the shortest height of two sides;
+  Start from the widest container which left side is at first position and right side is at the last position;
+
+  if left side is shorter, all other containers which has the same left side will be smaller than the current water container.
+  because current Water container got the widest width with the current left side;
+  In this case, we only need to move left side forward to right and get new Water container.
+
+  Same as right side. If right side is shorter, we move left side forward to right and get new water container.
+*/
+
 var maxArea = function (height) {
+  let i = 0;
   let j = height.length - 1;
-  let most = 0;
-  for (let i = 0; i < height.length; i++) {
-    while (height[j] < height[i]) {
-      const s = Math.min(height[j]) * (j - i);
-      most = Math.max(most, s);
+  let water = 0;
+  while (i < j) {
+    const w = j - i;
+    const h = Math.min(height[i], height[j]);
+    water = Math.max(water, w * h);
+
+    if (height[i] < height[j]) {
+      i++;
+    } else {
       j--;
-      if (j === i + 1) break;
     }
-    const s = Math.min(height[i], height[j]) * (j - i);
-    most = Math.max(most, s);
   }
-  return most;
+  return water;
 };
 
 const s1 = [1, 1];
